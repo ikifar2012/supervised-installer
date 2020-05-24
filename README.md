@@ -1,6 +1,8 @@
-# This install method has been deprecated.
+#  This install method has been deprecated.
 
-## https://www.home-assistant.io/blog/2020/05/09/deprecating-home-assistant-supervised-on-generic-linux/
+I have forked the original script to remove one if statement that was preventing the script from running, I probably cannot maintain this!!
+
+### https://www.home-assistant.io/blog/2020/05/09/deprecating-home-assistant-supervised-on-generic-linux/
 
 # Install Home Assistant Supervised
 
@@ -39,7 +41,7 @@ network-manager
 Run as root (sudo su):
 
 ```bash
-curl -sL https://raw.githubusercontent.com/home-assistant/supervised-installer/master/installer.sh | bash -s
+curl -sL https://raw.githubusercontent.com/ikifar2012/home-assistant-supervised-installer/master/installer.sh | bash -s
 ```
 
 ### Command line arguments
@@ -53,7 +55,7 @@ curl -sL https://raw.githubusercontent.com/home-assistant/supervised-installer/m
 you can set these parameters by appending ` -- <parameter> <value>` like:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/home-assistant/supervised-installer/master/installer.sh | bash -s -- -m MY_MACHINE
+curl -sL https://raw.githubusercontent.com/ikifar2012/home-assistant-supervised-installer/master/installer.sh | bash -s -- -m MY_MACHINE
 ```
 
 ## Supported Machine types
